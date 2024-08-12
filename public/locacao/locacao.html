@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Locações</title>
+    <link rel="stylesheet" href="locacao.css">
+</head>
+
+<body>
+    <header>
+        <h1>Locações</h1>
+        <a href="../index.html">Início</a> 
+        <a href="../logout/logout.html">Logout</a><br><br>
+    </header>
+    <main>
+        <h2>Lista de Locações Cadastradas</h2>
+        <button id="btNovo">Novo</button>
+        <table border="1">
+            <thead>
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>CLIENTE</th>
+                        <th>VEÍCULO</th>
+                        <th>INÍCIO</th>
+                        <th>FIM</th>
+                        <th>AÇÕES</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </main>
+    <div id="modal">
+    <form action="">
+        <input type="hidden" name="id" id="id"><br>
+        <label for="cliente">Cliente</label><br>
+        <input type="text" name="cliente" id="cliente"><br>
+        <label for="VeiculoId">Veículo</label><br>
+        <select name="VeiculoId" id="VeiculoId"></select><br>
+        <label for="inicio">Início</label><br>
+        <input type="date" name="inicio" id="inicio"><br>
+        <label for="fim">Fim</label><br>
+        <input type="date" name="fim" id="fim"><br>
+        <button>Salvar</button>
+    </form>
+    </div>
+    <footer>
+        <p>Ananda Ferreira - Atividade 7 - Web II</p>
+    </footer>
+</body>
+<script type="module" src="locacao.js"></script>
+</html>

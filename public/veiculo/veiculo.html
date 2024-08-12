@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veículos</title>
+    <link rel="stylesheet" href="veiculo.css">
+</head>
+
+<body>
+    <header>
+        <h1>Veículos Cadastrados</h1>
+        <a href="../index.html">Início</a> 
+        <a href="../logout/logout.html">Logout</a><br><br>
+    </header>
+    <main>
+        <h2>Todos os veículos</h2>
+        <button id="btNovo">Novo</button>
+        <table border="1">
+            <thead>
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>QUANTIDADE</th>
+                        <th>MODELO</th>
+                        <th>FABRICANTE</th>
+                        <th>PREÇO R$</th>
+                        <th>ANO</th>
+                        <th>PLACA</th>
+                        <th>KM</th>
+                        <th>COR</th>
+                        <th>DESCRIÇÃO</th>
+                        <th>AÇÕES</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </main>
+    <div id="modal">
+        <form action="">
+            <input type="hidden" name="id" id="id"><br>
+            <label for="quantidade">Quantidade</label><br>
+            <input type="number" name="quantidade" id="quantidade"><br>
+            <label for="modelo">Modelo</label><br>
+            <input type="text" name="modelo" id="modelo"><br>
+            <label for="fabricante">Fabricante</label><br>
+            <input type="text" name="fabricante" id="fabricante"><br>
+            <label for="preco">PREÇO R$</label><br>
+            <input type="text" name="preco" id="preco"><br>
+            <label for="ano">ANO</label><br>
+            <input type="text" name="ano" id="ano"><br>
+            <label for="placa">PLACA</label><br>
+            <input type="text" name="placa" id="placa"><br>
+            <label for="km">KM</label><br>
+            <input type="text" name="km" id="km"><br>
+            <label for="cor">COR</label><br>
+            <input type="text" name="cor" id="cor"><br>
+            <label for="descricao">DESCRIÇÃO</label><br>
+            <input type="text" name="descricao" id="descricao"><br>
+            <button>Salvar</button>
+        </form>
+    </div>
+    <footer>
+        <p>Ananda Ferreira - Atividade 7 - Web II</p>
+    </footer>
+</body>
+<script type="module" src="veiculo.js"></script>
+</html>
