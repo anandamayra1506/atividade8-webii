@@ -29,7 +29,7 @@ app.use(express.static('public'));
 app.use('/user', userRouter);
 app.use('/veiculos', veiculoRouter);
 app.use('/locacoes', locacaoRouter);
-app.use('/auto_escola', autoescolaRouter);
+app.use('/autoescola', autoescolaRouter);
 
 app.listen(port, () => {
     console.log(`Example app listening on port ${port}`);
