@@ -48,7 +48,28 @@ function desenhaTabela() {
         tbody.append(tr);
     }
 }
-
+function carregaAutoescolas() {
+    const opcoes = {
+        method: 'get',
+        credentials: 'include'
+    };
+    fetch(`${urlBaseAPI}/autoescolas`, opcoes)
+        .then((res) => {
+            //console.log(res);
+            return res.json();
+        })
+        .then((json) => {
+            const select = document.getElementById('VeiculoId');
+            select.innerHTML = '';
+            for (let i = 0; i < json.length; i++) {
+                const option = document.createElement('option');
+                option.innerText = json[i].nome + ' ' + json[i].endereco + ' ' + json[i].telefone + ' ' + json[i].site + ' ' + 
+                json[i].email;
+                option.value = json[i].id;
+                select.append(option);                
+            }            
+        })
+}
 function carregaDados() {
     const opcoes = {
         method: 'get',
@@ -156,6 +177,7 @@ window.addEventListener('load', () => {
     checkLogin()
     .then((res)=>{
         if(res){
+            carregaAutoescolas();
             carregaDados();
         } else {
             window.location = `${urlBaseFront}/login/login.html`;
