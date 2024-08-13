@@ -4,32 +4,41 @@
 }
 
 body {
-    background-color: rgb(71, 46, 14);
+    background-color: #f0f0f0;
+    color: #333;
     height: 100vh;
-    color: antiquewhite;
     padding: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
-main {
-    background-color: rgba(230, 220, 220, 0.651);
-    color: brown;
-    display: block;
-    justify-content: center;
-    align-items: center;
+h1 {
+    background-color: rgba(255, 255, 255, 0.651);
+    color: #0044cc;
 }
 
 main form {
     font-size: 1.2em;
     width: fit-content;
     height: fit-content;
-    border: 0.5px solid rgba(245, 221, 176);
-    background-color: rgba(230, 220, 220);
+    background-color: rgb(255, 255, 255);
     padding: 20px;
 }
 
 input {
     padding: 1.9px;
+}
+button {
+    padding: 10px;
+    margin:6px;
+    background-color: #77cc00bc;
+}
+footer {
+    background-color: #0044cc;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
