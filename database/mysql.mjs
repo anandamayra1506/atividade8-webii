@@ -1,7 +1,6 @@
 import { Sequelize } from "sequelize";
 
-/*GERADA PELO BANCO DE DADOS POSTGRE NO SITE DE HOSPEDAGEM RENDER */
-const sequelize = new Sequelize("postgresql://user_db:a8IjI9JgNj8m1sNhEOGFGpH2nUmFRhDO@dpg-cqt9vrd2ng1s739bhr60-a/veiculos_gajm");
+const sequelize = new Sequelize("postgresql://user_db:aZDChrfpkqj9qcuZIXCeubu2pDeNDKwj@dpg-cqtlbm8gph6c739sv2m0-a/veiculos_jlga");
 sequelize.sync();
 
 export default sequelize;
