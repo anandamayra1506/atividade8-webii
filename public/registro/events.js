@@ -1,4 +1,4 @@
-import { realizaLogin } from './registro.js';
+import { realizaRegistro } from './registro.js';
 
 const btLogin = document.querySelector('form button');
 btLogin.addEventListener('click', (e) => {
