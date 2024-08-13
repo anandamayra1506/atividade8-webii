@@ -8,8 +8,14 @@ import veiculoRouter from './routers/veiculo_router.mjs';
 import locacaoRouter from './routers/locacao_router.mjs';
 import autoescolaRouter from './routers/autoescola_router.mjs';
 
-const app = express();
-const port = 3000;
+
+const express = require('express')
+const app = express()
+const port = process.env.PORT || 4000;
+
+app.get('/', (req, res) => {
+  res.send('Hello World!')
+})
 
 const SequelizeStore = CSS(session.Store);
 
