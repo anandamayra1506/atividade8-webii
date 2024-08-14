@@ -12,32 +12,32 @@ const AutoEscolaController = {
         res.send(created);
     },
     "one": async (req, res) => {
-        const autoEscola = await AutoEscola.findOne({
+        const a = await AutoEscola.findOne({
             where: { id: req.params.id }
         });
-        res.json(autoEscola);
+        res.json(a);
     },
     "all": async (req, res) => {
         res.json(await AutoEscola.findAll());
     },
     "edit": async (req, res) => {
-        const autoEscola = await AutoEscola.findOne({
+        const a = await AutoEscola.findOne({
             where: { id: req.body.id }
         });
-        autoEscola.nome = req.body.nome;
-        autoEscola.endereco = req.body.endereco;
-        autoEscola.telefone = req.body.telefone;
-        autoEscola.site = req.body.site;
-        autoEscola.email = req.body.email;
-        await autoEscola.save();
-        res.json(autoEscola);
+        a.nome = req.body.nome;
+        a.endereco = req.body.endereco;
+        a.telefone = req.body.telefone;
+        a.site = req.body.site;
+        a.email = req.body.email;
+        await a.save();
+        res.json(a);
     },
     "remove": async (req, res) => {
-        const autoEscola = await AutoEscola.findOne({
+        const a = await AutoEscola.findOne({
             where: { id: req.body.id }
         });
-        await autoEscola.destroy();
-        res.json(autoEscola);
+        await a.destroy();
+        res.json(a);
     }
 };
 
